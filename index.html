@@ -224,11 +224,11 @@
                     </tr>\
                     <tr>\
                         <th scope="row">Acre_Walnut</th>\
-                        <td>' + (feature.properties['c_A_WALN'] !== null ? autolinker.link(feature.properties['c_A_WALN'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['c_A_WALN'] !== null ? autolinker.link(feature.properties['c_A_WALN'].toLocaleString('en-US') : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">SSB_Walnut $</th>\
-                        <td>' + (feature.properties['c_SSB_WALN'] !== null ? autolinker.link(feature.properties['c_SSB_WALN'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['c_SSB_WALN'] !== null ? autolinker.link(feature.properties['c_SSB_WALN'].toLocaleString('en-US') : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
